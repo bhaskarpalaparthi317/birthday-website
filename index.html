@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Mahalakshmi ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- MUSIC -->
+    <audio id="bgMusic" loop>
+        <source src="assets/music/sada-nannu.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicBtn" class="music-btn">
+        🎵 Play Music
+    </button>
+
+    <audio id="decorateSound">
+        <source src="assets/sounds/decorate.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="candleSound">
+        <source src="assets/sounds/light-candle.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="blowSound">
+        <source src="assets/sounds/blow.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="confettiSound">
+        <source src="assets/sounds/confetti.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="cheerSound">
+        <source src="assets/sounds/cheer.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- LOCK SCREEN -->
+<section id="lockScreen" class="screen active">
+
+    <div class="lock-container">
+
+        <h1>❤️ Secret Birthday Website ❤️</h1>
+
+        <p>Tap the correct pattern to unlock</p>
+
+        <div class="lock-box">
+
+            <img
+                id="lockGif"
+                src="assets/gifs/lock.gif"
+                class="lock-gif"
+                alt="gif">
+
+            <h2>
+                Enter Secret Password ❤️
+            </h2>
+
+            <input
+                type="password"
+                id="passwordInput"
+                placeholder="Enter Password">
+
+            <button id="unlockBtn">
+                Unlock
+            </button>
+
+            <p id="lockMessage"></p>
+
+        </div>
+
+        <p id="lockMessage"></p>
+
+    </div>
+
+</section>
+
+    <!-- WELCOME PAGE -->
+    <section id="welcomeScreen" class="screen">
+
+        <div class="center-box">
+
+            <img
+                src="assets/photos/funny.jpg"
+                class="funny-photo"
+                alt="Funny Photo">
+
+            <h1>
+                Happy Birthday Zara model😂😂
+            </h1>
+
+            <p>
+                Wishing you a day filled with happiness,
+                laughter and lots of love.
+            </p>
+
+            <button class="nextBtn" data-target="celebrationScreen">
+                Next →
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- CAKE PAGE -->
+    <section id="cakeScreen" class="screen">
+
+        <div id="balloonsContainer"></div>
+
+        <div class="center-box">
+
+            <h1>Let's Celebrate 🎉</h1>
+
+        <div class="cake-wrapper">
+
+            <div id="sparkles"></div>
+
+            <img
+                id="cakeImage"
+                class="cake-image"
+                src="assets/photos/cake-before.png"
+                alt="Cake">
+
+            <div id="candleContainer" class="candle-container">
+
+                <div id="flame" class="flame"></div>
+
+                <div id="candle" class="candle"></div>
+
+            </div>
+
+        </div>
+
+            <button id="decorateBtn">
+                Decorate Cake
+            </button>
+
+            <button id="blowBtn" style="display:none;">
+                Blow Candle
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- CELEBRATION PAGE -->
+    <section id="celebrationScreen" class="screen">
+
+        <div class="center-box">
+
+            <h1 class="birthday-title">
+                🎉 HAPPY BIRTHDAY
+            </h1>
+
+            <h2 class="birthday-name">
+                MY LOVE❤️
+            </h2>
+
+           <button class="nextBtn" data-target="galleryScreen">
+                 Next →
+           </button>
+
+        </div>
+
+    </section>
+
+    <!-- GALLERY PAGE -->
+    <section id="galleryScreen" class="screen">
+
+        <h1 class="section-title">
+            Our Memories ❤️
+        </h1>
+
+        <div id="galleryContainer"></div>
+
+        <button class="nextBtn" data-target="starScreen">
+            Final Surprise ✨
+        </button>
+
+    </section>
+
+    <!-- STAR PAGE -->
+    <section id="starScreen" class="screen">
+
+        <div class="stars-bg">
+
+            <h1>
+                Every Star Holds A Memory ✨
+            </h1>
+
+            <div id="starsContainer"></div>
+
+            <div id="memoryPopup">
+
+                <p id="memoryText"></p>
+
+            </div>
+
+           <div id="finalMessage" style="display:none;">
+
+    <h1>🎂</h1>
+
+    <h2>
+        One Last Surprise Awaits...
+    </h2>
+
+    <button
+        class="nextBtn"
+        onclick="showScreen('cakeScreen')">
+
+        Open Final Surprise ❤️
+
+    </button>
+
+</div>
+
+        </div>
+
+    </section>
+    <section id="loveScreen" class="screen">
+
+    <div class="center-box">
+
+        <h1 class="love-heart">
+            ❤️
+        </h1>
+
+        <h2>
+            Happy Birthday Mahalakshmi
+        </h2>
+
+        <p class="love-message">
+
+            Every memory with you has become one of my favorite memories.
+
+            <br><br>
+
+            Thank you for all the smiles,
+            care,
+            support,
+            and love you've given me.
+
+            <br><br>
+
+            I hope this year brings you happiness,
+            success,
+            and everything you've been working for.
+
+            <br><br>
+
+            One day we won't celebrate birthdays through a website...
+
+            <br><br>
+
+            We'll celebrate them together 🎂❤️
+
+            <br><br>
+
+            I Love You ❤️
+
+            (Chatgpt version)
+
+        </p>
+
+        <button id="toggleOriginal">
+
+            💌 Read My Original Message
+
+        </button>
+
+        <div id="originalMessage">
+
+            <p>
+
+                This is the small thing i can do at present time.
+                I hope you like this small surprise.
+                Have a great day dear bank manager 😜
+                Hope you become a big manager of a bank and for my life too 😝🫂
+                Wish everything goes right and we lead our best life.
+                In few years we will be doing these birthdays together.
+                Inkem cheppalo theliyatle raa,
+                english ikkada varuke manage chesa,
+                inka manage avvatle 😂
+                Ee roju tho nuvvu kuda 20 years 😝
+                Ilanti passages inka baga rayadam nerchukovali 😐
+                I love you my dear pottiiiii fellowww ❤️
+                Mmmmmmmmmmuuuaaahhhhh 😘😘😘
+                Many more happy returns of the day babyyyy ❤️❤️❤️
+
+            </p>
+
+        </div>
+
+        <h3>
+            — your lovely kanna ❤️
+        </h3>
+
+    </div>
+
+</section>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+<script src="app.js"></script>
+
+</body>
+</html>
